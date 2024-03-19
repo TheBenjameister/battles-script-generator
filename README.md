@@ -4,7 +4,7 @@ UI is rather simple at the moment and code needs to be run in terminal or code e
 
 ## How it works
 ### Step 1
-Download the source code provided and keep the file sturcture the same. In input, please paste your bestiary. I have provided one.
+Download the source code provided and keep the file sturcture the same. In input, please paste your bestiary and make sure it is called "bestiary.json" (without the quotation marks). I have provided one.
 Please note that monster entries your bestiary needs the following format: 
 ```json
 [{
