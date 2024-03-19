@@ -1,5 +1,5 @@
 # battles-script-generator
-### A battle script generator designed to work with the OTFBM + Battle Planner extensions for AVRAE discord bot. 
+### A battles script generator designed to work with the OTFBM + Battle Planner extensions for AVRAE discord bot. 
 UI is rather simple at the moment and code needs to be run in terminal or code editor, but improvements will be made over time. 
 
 ## How it works
@@ -74,8 +74,9 @@ To use this in discord, simply copy and paste this into your channel
 Then type in `!bplan Battles` to load your battle plan, you should see the following : 
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/0a661572-2e54-4e3d-8ed7-de63ee3dd83a)
 
-Lastly, just type in `!bplan begin "Goblin Camp"` and your battle has begun! 
-Just move all your tokens to wherever you want them and you're good to go!
+Lastly, type in `!bplan begin "Goblin Camp"` and your battle has begun! 
+Just move all your tokens to wherever you want them, and you're good to go!
+
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/83b2b0fa-14de-469b-b871-bc2e481272de)
 
 ## Repeated Use
@@ -89,4 +90,11 @@ After having loaded a token image once, the token code will be saved in your bes
     }
 ```
 And selecting Goblin in the programme disables the token URL box. If you want to delete the code, then you need to manually remove it from the bestiary.
+
+## END
+Thank you for using my generator and I hope it has been helpful for you! I will be improving it over time by making it nicer and more user friendly, so check back regularly to see the progress. If you have any bugs to report or suggestions to make, please let me know on discord (you'll find me in the OTFBM server). 
+
+If it has been helpful and you feel like you want to support me, a small tip goes a long way : 
+
+<a href='https://ko-fi.com/thebenjameister' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 
