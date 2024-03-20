@@ -1,14 +1,8 @@
 [
     {
-        "name": "Aarakocra",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Abjurer",
-        "cr": "9",
-        "size": "Medium",
+        "name": "Aboleth",
+        "cr": "10",
+        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -26,12 +20,6 @@
     {
         "name": "Adult Blue Dracolich",
         "cr": "17",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Adult Blue Dracolich",
-        "cr": "18",
         "size": "Huge",
         "shortcodeToken": ""
     },
@@ -93,24 +81,6 @@
         "name": "Air Elemental",
         "cr": "5",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Alhoon",
-        "cr": "10",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Allosaurus",
-        "cr": "2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Amphisbaena",
-        "cr": "1/2",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -192,44 +162,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Ankylosaurus",
-        "cr": "3",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Annis Hag",
-        "cr": "6",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Ape",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Apprentice Wizard",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Arcanaloth",
-        "cr": "12",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Archdruid",
-        "cr": "12",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Archer",
-        "cr": "3",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -243,18 +177,6 @@
         "name": "Assassin",
         "cr": "8",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Assassin Vine",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Aurochs",
-        "cr": "2",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -282,12 +204,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Babau",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Baboon",
         "cr": "0",
         "size": "Small",
@@ -306,12 +222,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Banderhobb",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Bandit",
         "cr": "1/8",
         "size": "Medium",
@@ -324,39 +234,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Banshee",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Barbed Devil",
         "cr": "5",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bard",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bard",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Barghest",
-        "cr": "4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Barlgura",
-        "cr": "5",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -384,32 +264,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Beholder",
-        "cr": "13",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Beholder",
-        "cr": "13",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Beholder Zombie",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Berserker",
         "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bheur Hag",
-        "cr": "7",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -426,21 +282,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Black Guard Drake",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Black Pudding",
         "cr": "4",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Blackguard",
-        "cr": "8",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -462,39 +306,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Blue Guard Drake",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Blue Slaad",
-        "cr": "7",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Boar",
         "cr": "1/4",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bodak",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bodak",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Boggle",
-        "cr": "1/8",
-        "size": "Small",
         "shortcodeToken": ""
     },
     {
@@ -504,27 +318,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Bone Naga (Guardian)",
-        "cr": "4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bone Naga (Spirit)",
-        "cr": "4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Brass Dragon Wyrmling",
         "cr": "1",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Brontosaurus",
-        "cr": "5",
-        "size": "Gargantuan",
         "shortcodeToken": ""
     },
     {
@@ -546,56 +342,14 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Bugbear Chief",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Bulette",
         "cr": "5",
         "size": "Large",
         "shortcodeToken": ""
     },
     {
-        "name": "Bullywug",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bullywug Croaker",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Bullywug Royal",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Cambion",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Camel",
         "cr": "1/8",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Captain Spunkmire",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Carrion Crawler",
-        "cr": "2",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -612,21 +366,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Catoblepas",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Cave Bear",
         "cr": "2",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Cave Fisher",
-        "cr": "3",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -642,33 +384,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Champion",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Chasme",
-        "cr": "6",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Chimera",
         "cr": "6",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Chitine",
-        "cr": "1/2",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Choldrith",
-        "cr": "3",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -696,12 +414,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Cloud Giant Smiling One",
-        "cr": "11",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Cockatrice",
         "cr": "1/2",
         "size": "Small",
@@ -710,12 +422,6 @@
     {
         "name": "Commoner",
         "cr": "0",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Conjurer",
-        "cr": "6",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -738,25 +444,7 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Cow",
-        "cr": "1/4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Crab",
-        "cr": "0",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Cranium Rat",
-        "cr": "0",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Crawling Claw",
         "cr": "0",
         "size": "Tiny",
         "shortcodeToken": ""
@@ -780,30 +468,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Cyclops",
-        "cr": "6",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Dao",
-        "cr": "11",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Darkling",
-        "cr": "1/2",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Darkling Elder",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Darkmantle",
         "cr": "1/2",
         "size": "Small",
@@ -816,51 +480,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Death Kiss",
-        "cr": "10",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Death Knight",
-        "cr": "17",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Death Slaad",
-        "cr": "10",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Death Tyrant",
-        "cr": "14",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Deep Gnome",
+        "name": "Deep Gnome (Svirfneblin)",
         "cr": "1/2",
         "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Deep Roth",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Deep Scion",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Deep Scion",
-        "cr": "3",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -870,32 +492,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Deinonychus",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Demilich",
-        "cr": "18",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Deva",
         "cr": "10",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Devourer",
-        "cr": "13",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Dimetradon",
-        "cr": "1/4",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -906,39 +504,15 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Displacer Beast",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Diviner",
-        "cr": "8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Djinni",
         "cr": "11",
         "size": "Large",
         "shortcodeToken": ""
     },
     {
-        "name": "Dolphin",
-        "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Doppelganger",
         "cr": "3",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Draegloth",
-        "cr": "7",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -972,48 +546,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Drow Elite Warrior",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drow Mage",
-        "cr": "7",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drow Priestess of Lolth",
-        "cr": "8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drowned Ascetic",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drowned Assassin",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drowned Blade",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Drowned Master",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Druid",
         "cr": "2",
         "size": "Medium",
@@ -1028,12 +560,6 @@
     {
         "name": "Duergar",
         "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Duodrone",
-        "cr": "1/4",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -1062,18 +588,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Elder Brain",
-        "cr": "14",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Eldritch Cannon",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Elephant",
         "cr": "4",
         "size": "Huge",
@@ -1083,18 +597,6 @@
         "name": "Elk",
         "cr": "1/4",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Empyrean",
-        "cr": "23",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Enchanter",
-        "cr": "5",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -1116,24 +618,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Evoker",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Faerie Dragon",
-        "cr": "1",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Fathomer",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Fire Elemental",
         "cr": "5",
         "size": "Large",
@@ -1146,57 +630,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Fire Giant Dreadnought",
-        "cr": "14",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Fire Snake",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Firenewt Warlock of Imix",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Firenewt Warrior",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Flail Snail",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Flameskull",
-        "cr": "4",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Flesh Golem",
         "cr": "5",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Flind",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Flumph",
-        "cr": "1/8",
-        "size": "Small",
         "shortcodeToken": ""
     },
     {
@@ -1212,27 +648,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Fomorian",
-        "cr": "8",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Frog",
         "cr": "0",
         "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Frog",
-        "cr": "0",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Froghemoth",
-        "cr": "10",
-        "size": "Huge",
         "shortcodeToken": ""
     },
     {
@@ -1242,39 +660,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Frost Giant Everlasting One",
-        "cr": "12",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Galeb Duhr",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Gargoyle",
         "cr": "2",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gas Spore",
-        "cr": "1/2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gauth",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gazer",
-        "cr": "1/2",
-        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
@@ -1335,12 +723,6 @@
         "name": "Giant Constrictor Snake",
         "cr": "2",
         "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Giant Coral Snake",
-        "cr": "4",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -1434,12 +816,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Giant Sea Eel",
-        "cr": "1/2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Giant Sea Horse",
         "cr": "1/2",
         "size": "Large",
@@ -1453,12 +829,6 @@
     },
     {
         "name": "Giant Spider",
-        "cr": "1",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Giant Strider",
         "cr": "1",
         "size": "Large",
         "shortcodeToken": ""
@@ -1500,36 +870,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Girallon",
-        "cr": "4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Githyanki Knight",
-        "cr": "8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Githyanki Warrior",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Githzerai Monk",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Githzerai Zerth",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Glabrezu",
         "cr": "9",
         "size": "Large",
@@ -1548,36 +888,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Gnoll Fang of Yeenoghu",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gnoll Flesh Gnawer",
-        "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gnoll Hunter",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gnoll Pack Lord",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gnoll Witherling",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Goat",
         "cr": "0",
         "size": "Medium",
@@ -1586,12 +896,6 @@
     {
         "name": "Goblin",
         "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Goblin Boss",
-        "cr": "1",
         "size": "Small",
         "shortcodeToken": ""
     },
@@ -1608,20 +912,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Goristro",
-        "cr": "17",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Gray Ooze",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Gray Slaad",
-        "cr": "9",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -1632,31 +924,7 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Green Guard Drake",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Green Hag",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Green Hag",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Green Slaad",
-        "cr": "8",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Grell",
         "cr": "3",
         "size": "Medium",
         "shortcodeToken": ""
@@ -1665,12 +933,6 @@
         "name": "Grick",
         "cr": "2",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Grick Alpha",
-        "cr": "7",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -1686,32 +948,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Grung",
-        "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Grung Elite Warrior",
-        "cr": "2",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Grung Wildling",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Guard",
         "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Guard Drake",
-        "cr": "2",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -1728,18 +966,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Hadrosaurus",
-        "cr": "1/4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Half-Ogre",
-        "cr": "1",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Half-Red Dragon Veteran",
         "cr": "5",
         "size": "Medium",
@@ -1752,12 +978,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Harpy Matriarch",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Hawk",
         "cr": "0",
         "size": "Tiny",
@@ -1766,12 +986,6 @@
     {
         "name": "Hell Hound",
         "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Helmed Horror",
-        "cr": "4",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -1800,39 +1014,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Hobgoblin Captain",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Hobgoblin Devastator",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Hobgoblin Iron Shadow",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Hobgoblin Warlord",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Homunculus",
         "cr": "0",
         "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Hook Horror",
-        "cr": "3",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -1872,26 +1056,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Illithilich",
-        "cr": "22",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Illusionist",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Imp",
         "cr": "1",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Intellect Devourer",
-        "cr": "2",
         "size": "Tiny",
         "shortcodeToken": ""
     },
@@ -1914,36 +1080,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Jackalwere",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Juvenile Kraken",
-        "cr": "14",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "K'Thar",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kenku",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Ki-rin",
-        "cr": "12",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Killer Whale",
         "cr": "3",
         "size": "Huge",
@@ -1956,44 +1092,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Koalinth",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Koalinth Sergeant",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Kobold",
         "cr": "1/8",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kobold Dragonshield",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kobold Inventor",
-        "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kobold Scale Sorcerer",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Korred",
-        "cr": "7",
         "size": "Small",
         "shortcodeToken": ""
     },
@@ -2001,42 +1101,6 @@
         "name": "Kraken",
         "cr": "23",
         "size": "Gargantuan",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kraken Priest",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kraken Priest",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kuo-Toa",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kuo-Toa Archpriest",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kuo-Toa Whip",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Kysh (Triton)",
-        "cr": "1",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -2052,12 +1116,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Leucrotta",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Lich",
         "cr": "21",
         "size": "Medium",
@@ -2070,74 +1128,14 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Living Iron Statue",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Lizard",
         "cr": "0",
         "size": "Tiny",
         "shortcodeToken": ""
     },
     {
-        "name": "Lizard King/Queen",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Lizardfolk",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lizardfolk Commoner",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lizardfolk Render",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lizardfolk Scaleshield",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lizardfolk Shaman",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lizardfolk Subchief",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Locathah",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Locathah Hunter",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Lt. Tucker",
-        "cr": "5",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -2166,20 +1164,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Manes",
-        "cr": "1/8",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Manticore",
         "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Marid",
-        "cr": "11",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -2190,39 +1176,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Martial Arts Adept",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Master Thief",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Mastiff",
         "cr": "1/8",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Maw Demon",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Maw Demon",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Maw of Sekolah",
-        "cr": "7",
-        "size": "Huge",
         "shortcodeToken": ""
     },
     {
@@ -2232,20 +1188,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Meenlock",
-        "cr": "2",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Merfolk",
         "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Merfolk Salvager",
-        "cr": "1",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -2256,33 +1200,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Mezzoloth",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Mimic",
         "cr": "2",
         "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mind Flayer",
-        "cr": "7",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mind Flayer Psion",
-        "cr": "8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mindwitness",
-        "cr": "5",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -2292,51 +1212,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Minotaur Living Crystal",
-        "cr": "6",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Minotaur Skeleton",
         "cr": "2",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Monodrone",
-        "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Monstrous Peryton",
-        "cr": "11",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Morkoth",
-        "cr": "11",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mouth of Grolantor",
-        "cr": "6",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mr. Dory",
-        "cr": "10",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Mud Mephit",
-        "cr": "1/4",
-        "size": "Small",
         "shortcodeToken": ""
     },
     {
@@ -2358,75 +1236,9 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Myconid Adult",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Myconid Sovereign",
-        "cr": "2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Myconid Sprout",
-        "cr": "0",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Nalfeshnee",
         "cr": "13",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Necromancer",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Needle Blight",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Neogi",
-        "cr": "3",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Neogi Hatchling",
-        "cr": "1/8",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Neogi Master",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Neothelid",
-        "cr": "13",
-        "size": "Gargantuan",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "New Creature",
-        "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Night Hag",
-        "cr": "5",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -2442,32 +1254,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Nilbog",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Noble",
         "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Nothic",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Nycaloth",
-        "cr": "9",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Oceanus",
-        "cr": "1/2",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -2508,54 +1296,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Orc Blade of Ilneval",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc Claw of Luthic",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc Eye of Gruumsh",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc Hand of Yutrus",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc Nurtured One of Yurtrus",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc Red Fang of Shargaas",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orc War Chief",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Orog",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Otyugh",
         "cr": "5",
         "size": "Large",
@@ -2574,12 +1314,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Ox",
-        "cr": "1/4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Panther",
         "cr": "1/4",
         "size": "Medium",
@@ -2592,63 +1326,15 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Pentadrone",
-        "cr": "2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Peryton",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Phase Spider",
         "cr": "3",
         "size": "Large",
         "shortcodeToken": ""
     },
     {
-        "name": "Piercer",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Pirate Bosun",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Pirate Captain",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Pirate Deck Wizard",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Pirate First Mate",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Pit Fiend",
         "cr": "20",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Pixie",
-        "cr": "1/4",
-        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
@@ -2694,49 +1380,13 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Pteranodon",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Purple Worm",
         "cr": "15",
         "size": "Gargantuan",
         "shortcodeToken": ""
     },
     {
-        "name": "Quadrone",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Quaggoth",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Quaggoth Spore Servant",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Quasit",
-        "cr": "1",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Quetzalcoatlus",
-        "cr": "2",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Quickling",
         "cr": "1",
         "size": "Tiny",
         "shortcodeToken": ""
@@ -2772,24 +1422,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Red Guard Drake",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Red Slaad",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Redcap",
-        "cr": "3",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Reef Shark",
         "cr": "1/2",
         "size": "Medium",
@@ -2799,12 +1431,6 @@
         "name": "Remorhaz",
         "cr": "11",
         "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Revenant",
-        "cr": "5",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -2820,12 +1446,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Rip Tide Priest",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Roc",
         "cr": "11",
         "size": "Gargantuan",
@@ -2834,12 +1454,6 @@
     {
         "name": "Roper",
         "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Roth\u00e9",
-        "cr": "1/4",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -2868,80 +1482,14 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Sahuagin Baron",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Blademaster",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Champion",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Coral Smasher",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Deep Diver",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Hatchling Swarm",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin High Priestess",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Priestess",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sahuagin Wave Shaper",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Salamander",
         "cr": "5",
         "size": "Large",
         "shortcodeToken": ""
     },
     {
-        "name": "Sanbalet",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Satyr",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Scarecrow",
-        "cr": "1",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -2964,56 +1512,14 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Sea Hag",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Sea Horse",
         "cr": "0",
         "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sea Horse",
-        "cr": "0",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sea Lion",
-        "cr": "1/2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Sea Spawn",
-        "cr": "1",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
         "name": "Shadow",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Shadow Demon",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Shadow Mastiff",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Shadow Mastiff Alpha",
-        "cr": "2",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -3024,26 +1530,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Shemus",
-        "cr": "4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Shield Guardian",
         "cr": "7",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Ship",
-        "cr": "15",
-        "size": "Gargantuan",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Shoosuva",
-        "cr": "8",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -3060,57 +1548,15 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Skeletal Alchemist",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Skeleton",
         "cr": "1/4",
         "size": "Medium",
         "shortcodeToken": ""
     },
     {
-        "name": "Slaad Tadpole",
-        "cr": "1/8",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Slithering Tracker",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Smoke Mephit",
-        "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Solar",
         "cr": "21",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Soldier Kraken Tentacles",
-        "cr": "2",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Spawn of Kyuss",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Spectator",
-        "cr": "3",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -3123,12 +1569,6 @@
         "name": "Spider",
         "cr": "0",
         "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Spined Devil",
-        "cr": "2",
-        "size": "Small",
         "shortcodeToken": ""
     },
     {
@@ -3156,18 +1596,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Stegosaurus",
-        "cr": "4",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Stench Kow",
-        "cr": "1/4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Stirge",
         "cr": "1/8",
         "size": "Tiny",
@@ -3176,12 +1604,6 @@
     {
         "name": "Stone Giant",
         "cr": "7",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Stone Giant Dreamwalker",
-        "cr": "10",
         "size": "Huge",
         "shortcodeToken": ""
     },
@@ -3198,18 +1620,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Storm Giant Quintessent",
-        "cr": "16",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Succubus/Incubus",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Succubus/Incubus",
         "cr": "4",
         "size": "Medium",
@@ -3218,115 +1628,67 @@
     {
         "name": "Swarm of Bats",
         "cr": "1/4",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Beetles",
         "cr": "1/2",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Centipedes",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Swarm of Cranium Rats",
-        "cr": "5",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Insects",
         "cr": "1/2",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Poisonous Snakes",
         "cr": "2",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Quippers",
         "cr": "1",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Rats",
         "cr": "1/4",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Ravens",
         "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Swarm of Rot Grubs",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Swarm of Rot Grubs",
-        "cr": "1/2",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Spiders",
         "cr": "1/2",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Swarm of Wasps",
         "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Swashbuckler",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Tanarukk",
-        "cr": "5",
-        "size": "Medium",
+        "size": "Tiny",
         "shortcodeToken": ""
     },
     {
         "name": "Tarrasque",
         "cr": "30",
         "size": "Gargantuan",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Thorny",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Thousand Teeth",
-        "cr": "6",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Thri-Kreen",
-        "cr": "1",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
@@ -3338,24 +1700,6 @@
     {
         "name": "Tiger",
         "cr": "1",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Tlincalli",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Transmuter",
-        "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Trapper",
-        "cr": "3",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -3378,51 +1722,15 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Tridrone",
-        "cr": "1/2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Troglodyte",
-        "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Troll",
         "cr": "5",
         "size": "Large",
         "shortcodeToken": ""
     },
     {
-        "name": "Twig Blight",
-        "cr": "1/8",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Tyrannosaurus Rex",
         "cr": "8",
         "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Ulitharid",
-        "cr": "9",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Ultroloth",
-        "cr": "13",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Umber Hulk",
-        "cr": "5",
-        "size": "Large",
         "shortcodeToken": ""
     },
     {
@@ -3444,38 +1752,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Vargouille",
-        "cr": "1",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Vegepygmy",
-        "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Vegepygmy Chief",
-        "cr": "2",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Velociraptor",
-        "cr": "1/4",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Veteran",
         "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Vine Blight",
-        "cr": "1/2",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -3498,12 +1776,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "War Priest",
-        "cr": "9",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Warhorse",
         "cr": "1/2",
         "size": "Large",
@@ -3516,38 +1788,8 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Warlock of the Archfey",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Warlock of the Fiend",
-        "cr": "7",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Warlock of the Great Old",
-        "cr": "6",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Warlord",
-        "cr": "12",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Water Elemental",
         "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Water Weird",
-        "cr": "3",
         "size": "Large",
         "shortcodeToken": ""
     },
@@ -3594,18 +1836,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "White Guard Drake",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Whitefang(Wyrmling)",
-        "cr": "1/8",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Wight",
         "cr": "3",
         "size": "Medium",
@@ -3618,18 +1848,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Will-o'-Wisp",
-        "cr": "2",
-        "size": "Tiny",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Winged Kobold",
-        "cr": "1/4",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Winter Wolf",
         "cr": "3",
         "size": "Large",
@@ -3638,12 +1856,6 @@
     {
         "name": "Wolf",
         "cr": "1/4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Wood Woad",
-        "cr": "5",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -3660,12 +1872,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Wrecker Kraken Tentacles",
-        "cr": "5",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Wyvern",
         "cr": "6",
         "size": "Large",
@@ -3674,42 +1880,6 @@
     {
         "name": "Xorn",
         "cr": "5",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Xvart",
-        "cr": "1/8",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Xvart Speaker",
-        "cr": "1/8",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Xvart Warlock of Raxivort",
-        "cr": "1",
-        "size": "Small",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yeth Hound",
-        "cr": "4",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yeti",
-        "cr": "3",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yochlol",
-        "cr": "10",
         "size": "Medium",
         "shortcodeToken": ""
     },
@@ -3762,18 +1932,6 @@
         "shortcodeToken": ""
     },
     {
-        "name": "Young Red Shadow Dragon",
-        "cr": "13",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Young Remorhaz",
-        "cr": "5",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
         "name": "Young Silver Dragon",
         "cr": "9",
         "size": "Large",
@@ -3783,72 +1941,6 @@
         "name": "Young White Dragon",
         "cr": "6",
         "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-Ti Abomination",
-        "cr": "7",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Abomination",
-        "cr": "7",
-        "size": "Large",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Anathema",
-        "cr": "12",
-        "size": "Huge",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Broodguard",
-        "cr": "2",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-Ti Malison",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Malison",
-        "cr": "3",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Mind Whisperer",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Nightmare Speaker",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Pit Master",
-        "cr": "4",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Pureblood",
-        "cr": "1",
-        "size": "Medium",
-        "shortcodeToken": ""
-    },
-    {
-        "name": "Yuan-ti Pureblood",
-        "cr": "1",
-        "size": "Medium",
         "shortcodeToken": ""
     },
     {
