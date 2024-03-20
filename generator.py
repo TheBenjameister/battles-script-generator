@@ -1,4 +1,5 @@
 import os
+import sys
 import tkinter as tk
 from tkinter import ttk
 import json 
@@ -16,8 +17,21 @@ encounter_name_entry.grid(row=0, column=1)
 
 # Load monsters from the JSON file
 def load_monsters():
-    with open('./input/bestiary.json', 'r') as file:
-        monsters = json.load(file)
+    # Determine if we're frozen (compiled) and set the base directory accordingly
+    if getattr(sys, 'frozen', False):
+        base_dir = os.path.dirname(sys.executable)
+    else:
+        base_dir = os.path.dirname(__file__)
+    
+    bestiary_path = os.path.join(base_dir, 'data', 'bestiary.json')
+    
+    try:
+        with open(bestiary_path, 'r') as file:
+            monsters = json.load(file)
+    except FileNotFoundError:
+        print(f"Bestiary file not found at {bestiary_path}. Please ensure the file exists.")
+        sys.exit(1)  # Exit the program if the file is not found
+    
     return monsters
 
 monsters = load_monsters()
@@ -37,11 +51,26 @@ def on_monster_selected(event):
         else:
             token_url_entry.config(state='normal')  # Enable if shortcodeToken is empty
 
+def filter_monsters(*args):
+    #Filter the monster list based on the input (case-insensitive)
+    input_text = monster_input_var.get().lower()
+    filtered_monster_names = [name for name in monster_names if input_text in name.lower()]
+    
+    # Update the combobox values to only show filtered options
+    monster_combobox['values'] = filtered_monster_names
+
+    # If the current input fully matches one of the filtered options, automatically select it
+    if input_text in [name.lower() for name in filtered_monster_names]:
+        monster_combobox.set(next((name for name in filtered_monster_names if name.lower() == input_text), ''))
+
 # Add monster selection combobox
 tk.Label(root, text="Select Monster:").grid(row=1, column=0)
+monster_input_var = tk.StringVar(root)
 monster_combobox = ttk.Combobox(root, values=monster_names)
 monster_combobox.bind("<<ComboboxSelected>>", on_monster_selected)
 monster_combobox.grid(row=1, column=1)
+monster_combobox.config(textvariable=monster_input_var)
+monster_input_var.trace_add("write", filter_monsters)
 
 # Add monster quantity entry
 tk.Label(root, text="Quantity:").grid(row=2, column=0)
@@ -76,8 +105,8 @@ def add_monster():
             "shortcodeToken" : selected_monster["shortcodeToken"]
         })
     
-    print("Monster Added")
-    print(monsters_data)
+    out_print("Monster Added")
+    out_print(monsters_data)
     # Recalculate and update CR/EXP info based on the newly added monster
     #update_cr_exp_info()
     # Clear input fields for the next addition
@@ -111,7 +140,7 @@ cell_size_entry.grid(row=7, column=1)
 def generate_bplan_data():
     encounter_name = encounter_name_entry.get()
     if not encounter_name:  # Check if encounter name is empty
-        print("Encounter name is missing.")
+        out_print("Encounter name is missing.")
         return  # Exit the function if no encounter name is provided
 
     bplan_data = {
@@ -128,7 +157,7 @@ def generate_bplan_data():
         token_short_code_final = monster.get("shortcodeToken")
         if token_short_code_final:
             # If shortcodeToken exists, use it directly without making a request
-            print("Using existing shortcodeToken for monster.")
+            out_print("Using existing shortcodeToken for monster.")
         else:
             # Process for monsters without a shortcodeToken
             token_short_code = base64.b64encode(monster["token_url"].encode('utf-8')).decode('utf-8')
@@ -142,7 +171,7 @@ def generate_bplan_data():
                 # Update json to add missing shortcodeToken
                 update_monster_shortcode(monster["name"], token_short_code_final)
             else:
-                print(f"Failed to obtain shortcode for {monster['name']}, status code: {response.status_code}")
+                out_print(f"Failed to obtain shortcode for {monster['name']}, status code: {response.status_code}")
                 continue
         
         monster_size = size_to_abbreviation.get(monster["size"], "M")
@@ -151,11 +180,18 @@ def generate_bplan_data():
         bplan_data[encounter_name].append(monster_command)
     
     bplan_json = json.dumps(bplan_data, indent=4)
-    print("!uvar Battles " + bplan_json)
+    out_print("!uvar Battles " + bplan_json)
 
 # Generate button
 generate_button = tk.Button(root, text="Generate", command=generate_bplan_data)
 generate_button.grid(row=8, column=0, columnspan=4)
+
+output_text = tk.Text(root, height=10, width=50)
+output_text.grid(row=14, column=0, columnspan=2, sticky="nsew", padx=5, pady=5)
+
+scrollb = ttk.Scrollbar(root, command=output_text.yview)
+scrollb.grid(row=14, column=2, sticky='nsew')
+output_text['yscrollcommand'] = scrollb.set
 
 # Frame for the Treeview
 frame = ttk.Frame(root)
@@ -184,6 +220,7 @@ def display_monsters():
     for monster in monsters_data:
         tree.insert("", tk.END, values=(monster["name"], monster["quantity"], monster["cr"], monster["size"], monster["token_url"]))
 
+# Delete the monsters in the treeView
 def delete_selected_monster():
     # Get the selected item
     selected_items = tree.selection()
@@ -207,14 +244,21 @@ def delete_selected_monster():
         # Remove the item from the Treeview
         tree.delete(selected_item)
 
+# Itterated through monsters with changed shortcodes and updates json
 def update_monster_shortcode(monster_name, shortcode):
-    # Itterated through monsters with changed shortcodes and updats json
     for monster in monsters:
         if monster["name"] == monster_name:
             monster["shortcodeToken"] = shortcode
             break
     with open('./input/bestiary.json', 'w') as file:
         json.dump(monsters, file, indent=4)
+
+# Print to output text box
+def out_print(*args, **kwargs):
+    # Insert text at the end of the text widget
+    output_text.insert(tk.END, ' '.join(map(str, args)) + '\n')
+    # Ensure the latest output is visible
+    output_text.see(tk.END)
 
 # Run the application
 root.mainloop()
