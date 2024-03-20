@@ -1,10 +1,10 @@
 # battles-script-generator
 ### A battles script generator designed to work with the OTFBM + Battle Planner extensions for AVRAE discord bot. 
-UI is rather simple at the moment and code needs to be run in terminal or code editor, but improvements will be made over time. 
+UI is rather simple at the moment, but improvements will be made over time. 
 
 ## How it works
 ### Step 1
-Download the source code provided and keep the file sturcture the same. In input, please paste your bestiary and make sure it is called "bestiary.json" (without the quotation marks). I have provided one.
+Download the source code provided and keep the file sturcture the same. In data, please paste your bestiary and make sure it is called "bestiary.json" (without the quotation marks). I have provided one.
 Please note that monster entries your bestiary needs the following format: 
 ```json
 [{
@@ -26,9 +26,7 @@ An example would be :
 As we see there is an empty directory called shortcodeToken that we will come back to later.
 
 ### Step 2
-
-Run the code in terminal or in a python editor. Eventually I will improve the programme to run alone, but right now it hasn't been compiled and it outputs data to the terminal. 
-You should be greeted with this :
+Running the exe file provided, you should be greeted with this :
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/c42ac776-2064-4ff4-a8e5-8b12fdc98ef9)
 Here you can see a multitude of fields that we will be filling in for your encounter. 
 Lets set one up together!
@@ -37,7 +35,7 @@ Lets set one up together!
 I want to set up an encounter with 3 goblins and a goblin boss. To do so, lets start by naming our encounter something like "goblin camp". Please make sure to keep your encounter name in lower case.
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/5a5f2826-8379-42e1-8684-97bbb9b45fdc)
 
-Next, lets select goblin from the drop down, and choose how many goblins we want. 
+Next, lets select goblin from the drop down, and choose how many goblins we want. You can also type in "goblin", then when clicking the drop down you will see all monsters that contain "goblin" 
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/06ada795-85a3-4dd9-9ceb-c20c8d10085a)
 
 Now we add a url to an image which we want to use as a token. I chose this one from the forgoten realms wiki : https://www.dndbeyond.com/avatars/thumbnails/30783/955/1000/1000/638062024584880857.png
@@ -56,7 +54,7 @@ Now that we have our enemies ready to fight, we need a map! Find a map that you 
 Insert the grid size and cell size that you're playing with. This map is designed to be 10x10 with grids that are 45 pixels by 45 pixels. 
 ![image](https://github.com/TheBenjameister/battles-script-generator/assets/82944215/dc904e1e-b170-49f8-992f-2ec60c5dbf8c)
 
-We are done! Now press generate and we get the following in the terminal (please not that this may take a few moments): 
+We are done! Now press generate and we get the following in the text box (please not that this may take a few moments): 
 ```json
 !uvar Battles {
     "goblin camp": [
