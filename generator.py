@@ -175,9 +175,10 @@ def generate_bplan_data():
                 continue
         
         monster_size = size_to_abbreviation.get(monster["size"], "M")
-        monster_command = f"!i madd {monster['name']} -n {monster['quantity']} -note \"Token: {token_short_code_final} | Size: {monster_size}\""
-        
-        bplan_data[encounter_name].append(monster_command)
+
+        for _ in range(monster["quantity"]):
+            monster_command = f"!i madd \"{monster['name']}\" -n 1 -name \"{monster['name']} #\" -note \"Token: {token_short_code_final} | Size: {monster_size}\""
+            bplan_data[encounter_name].append(monster_command)
     
     bplan_json = json.dumps(bplan_data, indent=4)
     out_print("!uvar Battles " + bplan_json)
@@ -250,7 +251,7 @@ def update_monster_shortcode(monster_name, shortcode):
         if monster["name"] == monster_name:
             monster["shortcodeToken"] = shortcode
             break
-    with open('./input/bestiary.json', 'w') as file:
+    with open('./data/bestiary.json', 'w') as file:
         json.dump(monsters, file, indent=4)
 
 # Print to output text box
