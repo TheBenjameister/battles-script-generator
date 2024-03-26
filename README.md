@@ -3,6 +3,8 @@
 
 # THIS TUTORIAL IS OUT OF DATE. A NEW TUTORIAL WILL BE MADE WITH ALL NEW FEATURES IN MIND. PLEASE FULLY EXPLAND THE APPLICATION WINDOW TO FILL YOUR SCREEN IN CASE SOME OF IT IS CUT OFF. 
 
+# TO ADD LOCATION TO A MONSTER, CLICK ON THE MONSTER IN THE TABLE AND THEN CLICK ON THE GRID ON THE MAP
+
 ## How it works
 ### Step 1
 Download the source code provided and keep the file sturcture the same. In data, please paste your bestiary and make sure it is called "bestiary.json" (without the quotation marks). I have provided one.
