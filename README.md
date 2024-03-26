@@ -1,6 +1,7 @@
 # battles-script-generator
 ### A battles script generator designed to work with the OTFBM + Battle Planner extensions for AVRAE discord bot. 
-UI is rather simple at the moment, but improvements will be made over time. 
+
+#THIS TUTORIAL IS OUT OF DATE. A NEW TUTORIAL WILL BE MADE WITH ALL NEW FEATURES IN MIND. PLEASE FULLY EXPLAND THE APPLICATION WINDOW TO FILL YOUR SCREEN IN CASE SOME OF IT IS CUT OFF. 
 
 ## How it works
 ### Step 1
