@@ -1,18 +1,37 @@
 import os
 import sys
+import io
 import tkinter as tk
 from tkinter import ttk
 import json 
 import base64
 import requests
+from PIL import Image, ImageDraw, ImageTk
+
 
 # Create the main window
 root = tk.Tk()
 root.title("Encounter Generator")
 
+# Frame for inputs
+input_frame = tk.Frame(root)
+input_frame.grid(row=0, column=0, sticky="nsew")
+
+# Frame for Treeview
+treeview_frame = tk.Frame(root)
+treeview_frame.grid(row=0, column=1, sticky="nsew", padx=10)
+
+# Frame for the map and scrollbars
+map_frame = tk.Frame(root)
+map_frame.grid(row=1, column=0, columnspan=3, padx=10, pady=10, sticky="nsew")
+
+# Frame for text output
+text_frame = tk.Frame(root)
+text_frame.grid(row=0, column=2, padx=10, pady=10, sticky="nsew")
+
 # Encounter Name 
-tk.Label(root, text="Encounter Name:").grid(row=0, column=0)
-encounter_name_entry = tk.Entry(root)
+tk.Label(input_frame, text="Encounter Name:").grid(row=0, column=0)
+encounter_name_entry = tk.Entry(input_frame)
 encounter_name_entry.grid(row=0, column=1)
 
 # Load monsters from the JSON file
@@ -34,11 +53,13 @@ def load_monsters():
     
     return monsters
 
+# Initialize the monsters
 monsters = load_monsters()
 
 # Convert monsters list to a format suitable for the dropdown menu
 monster_names = [monster["name"] for monster in monsters]
 
+# Logic for selecting monsters 
 def on_monster_selected(event):
     # Get the selected monster's name
     selected_monster_name = monster_combobox.get()
@@ -51,6 +72,7 @@ def on_monster_selected(event):
         else:
             token_url_entry.config(state='normal')  # Enable if shortcodeToken is empty
 
+# Logic for filtering monsters by name typed in
 def filter_monsters(*args):
     #Filter the monster list based on the input (case-insensitive)
     input_text = monster_input_var.get().lower()
@@ -64,28 +86,33 @@ def filter_monsters(*args):
         monster_combobox.set(next((name for name in filtered_monster_names if name.lower() == input_text), ''))
 
 # Add monster selection combobox
-tk.Label(root, text="Select Monster:").grid(row=1, column=0)
-monster_input_var = tk.StringVar(root)
-monster_combobox = ttk.Combobox(root, values=monster_names)
+tk.Label(input_frame, text="Select Monster:").grid(row=1, column=0)
+monster_input_var = tk.StringVar(input_frame)
+monster_combobox = ttk.Combobox(input_frame, values=monster_names)
 monster_combobox.bind("<<ComboboxSelected>>", on_monster_selected)
 monster_combobox.grid(row=1, column=1)
 monster_combobox.config(textvariable=monster_input_var)
 monster_input_var.trace_add("write", filter_monsters)
 
 # Add monster quantity entry
-tk.Label(root, text="Quantity:").grid(row=2, column=0)
-monster_quantity_entry = tk.Entry(root)
+tk.Label(input_frame, text="Quantity:").grid(row=2, column=0)
+monster_quantity_entry = tk.Entry(input_frame)
 monster_quantity_entry.grid(row=2, column=1)
 
 # Field for adding token URLs
-tk.Label(root, text="Token URL:").grid(row=3, column=0)
-token_url_entry = tk.Entry(root, state='disabled')
+tk.Label(input_frame, text="Token URL:").grid(row=3, column=0)
+token_url_entry = tk.Entry(input_frame, state='disabled')
 token_url_entry.grid(row=3, column=1)
+
+# Initialize the counter
+monster_id_counter = 1  
 
 # Array containing the monsters in the encounter
 monsters_data = []
 
+# Logic for adding monsters to list
 def add_monster():
+    global monster_id_counter
     # Get monster from combobox
     selected_monster_name = monster_combobox.get()
     quantity = int(monster_quantity_entry.get())
@@ -94,49 +121,118 @@ def add_monster():
     selected_monster = next((monster for monster in monsters if monster["name"] == selected_monster_name), None)
     
     if selected_monster:
-        # Include the CR in the monsters_data
-        monsters_data.append({
-            "name": selected_monster["name"],
-            "cr": selected_monster["cr"],
-            "quantity": quantity,
-            # Assuming you will later include the token URL and size, for now placeholders
-            "token_url": token_url_entry.get(), 
-            "size": selected_monster["size"],  # You can include size or any other needed attributes
-            "shortcodeToken" : selected_monster["shortcodeToken"]
-        })
+        for _ in range (quantity):
+            monsters_data.append({
+                # Access global counter 
+                "id" : monster_id_counter,
+                "name": selected_monster["name"],
+                # Include the CR in the monsters_data for encounter balancing 
+                "cr": selected_monster["cr"],
+                "quantity": 1,
+                "token_url": token_url_entry.get(), 
+                "size": selected_monster["size"], 
+                "shortcodeToken" : selected_monster["shortcodeToken"],
+                "location" : ""
+            })
+            monster_id_counter += 1 
     
     out_print("Monster Added")
     out_print(monsters_data)
-    # Recalculate and update CR/EXP info based on the newly added monster
-    #update_cr_exp_info()
     # Clear input fields for the next addition
     monster_quantity_entry.delete(0, tk.END)
     token_url_entry.delete(0, tk.END)
     display_monsters()
 
 # Add monster button
-add_monster_button = tk.Button(root, text="Add Monster", command=add_monster)
-add_monster_button.grid(row=4, column=0, columnspan=2)
-
-# Delete monster button 
-delete_monster_button = tk.Button(root, text="Delete Selected Monster", command=lambda: delete_selected_monster())
-delete_monster_button.grid(row=13, column=0, columnspan=4, pady=5)
+add_monster_button = tk.Button(input_frame, text="Add Monster", command=add_monster)
+add_monster_button.grid(row=4, column=1)
 
 # Field for encounter map URL
-tk.Label(root, text="Map URL:").grid(row=5, column=0)
-map_url_entry = tk.Entry(root)
+tk.Label(input_frame, text="Map URL:").grid(row=5, column=0)
+map_url_entry = tk.Entry(input_frame)
 map_url_entry.grid(row=5, column=1)
 
 # Field for Map Grid Size
-tk.Label(root, text="Grid Size (XxY):").grid(row=6, column=0)
-grid_size_entry = tk.Entry(root)
+tk.Label(input_frame, text="Grid Size (XxY):").grid(row=6, column=0)
+grid_size_entry = tk.Entry(input_frame)
 grid_size_entry.grid(row=6, column=1)
 
 # Field for Map Cell Size
-tk.Label(root, text="Cell Size:").grid(row=7, column=0)
-cell_size_entry = tk.Entry(root)
+tk.Label(input_frame, text="Cell Size:").grid(row=7, column=0)
+cell_size_entry = tk.Entry(input_frame)
 cell_size_entry.grid(row=7, column=1)
 
+# Vertical and horizontal scrollbars for the canvas
+v_scrollbar = ttk.Scrollbar(map_frame, orient="vertical")
+h_scrollbar = ttk.Scrollbar(map_frame, orient="horizontal")
+
+# The map canvas
+map_canvas = tk.Canvas(map_frame, width=1250, height=500,
+                       yscrollcommand=v_scrollbar.set, xscrollcommand=h_scrollbar.set)
+
+# Configure scrollbars
+v_scrollbar.config(command=map_canvas.yview)
+h_scrollbar.config(command=map_canvas.xview)
+
+# Grid placement for the canvas and scrollbars
+map_canvas.grid(row=0, column=0, sticky="nsew")
+v_scrollbar.grid(row=0, column=1, sticky="ns")
+h_scrollbar.grid(row=1, column=0, sticky="ew")
+
+# Loads map 
+def load_map():
+    # Fetch the image from the URL
+    response = requests.get(map_url_entry.get())
+    image_data = io.BytesIO(response.content)
+    image = Image.open(image_data).convert("RGBA")
+    
+    # Create an ImageDraw object and draw the grid lines and labels on the image
+    draw = ImageDraw.Draw(image)
+    grid_size_x, grid_size_y = map(int, grid_size_entry.get().split('x'))
+    cell_size_px = int(cell_size_entry.get())
+    
+    # Draw grid on map
+    for x in range(0, grid_size_x * cell_size_px, cell_size_px):
+        draw.line((x, 0, x, grid_size_y * cell_size_px), fill="black")
+        label = get_alpha_label((x // cell_size_px) + 1)
+        draw.text((x + 5, 0), text=label, fill="black")
+        
+    for y in range(0, grid_size_y * cell_size_px, cell_size_px):
+        draw.line((0, y, grid_size_x * cell_size_px, y), fill="black")
+        draw.text((0, y + 5), text=str(y // cell_size_px + 1), fill="black")
+
+    # Convert the PIL image to a format Tkinter Canvas can use
+    tk_image = ImageTk.PhotoImage(image)
+    
+    # Display the image on the Canvas
+    map_canvas.create_image(0, 0, anchor="nw", image=tk_image)
+    map_canvas.image = tk_image  # Keep a reference to avoid garbage collection
+    
+    # Set the scrollable region to the size of the image
+    map_canvas.config(scrollregion=map_canvas.bbox("all"))
+
+    # Bind the click event if needed
+    map_canvas.bind("<Button-1>", on_canvas_click)
+
+# Load Map button
+load_map_button = tk.Button(input_frame, text="Load Map", state='disabled', command=load_map)
+load_map_button.grid(row=8, column=1)
+
+# Determines if fields are not empty
+def check_fields_and_enable_button():
+    url = map_url_entry.get()
+    grid_size = grid_size_entry.get()
+    cell_size = cell_size_entry.get()
+    if url and grid_size and cell_size:  
+        load_map_button['state'] = 'normal'
+    else:
+        load_map_button['state'] = 'disabled'
+        
+map_url_entry.bind('<KeyRelease>', lambda event: check_fields_and_enable_button())
+grid_size_entry.bind('<KeyRelease>', lambda event: check_fields_and_enable_button())
+cell_size_entry.bind('<KeyRelease>', lambda event: check_fields_and_enable_button())
+
+# Logic for generating bplan code
 def generate_bplan_data():
     encounter_name = encounter_name_entry.get()
     if not encounter_name:  # Check if encounter name is empty
@@ -177,39 +273,61 @@ def generate_bplan_data():
         monster_size = size_to_abbreviation.get(monster["size"], "M")
 
         for _ in range(monster["quantity"]):
-            monster_command = f"!i madd \"{monster['name']}\" -n 1 -name \"{monster['name']} #\" -note \"Token: {token_short_code_final} | Size: {monster_size}\""
+            monster_command = f"!i madd \"{monster['name']}\" -n 1 -name \"{monster['name']} #\" -note \"Token: {token_short_code_final} | Size: {monster_size} | Location: {monster['location']}\""
             bplan_data[encounter_name].append(monster_command)
     
     bplan_json = json.dumps(bplan_data, indent=4)
     out_print("!uvar Battles " + bplan_json)
 
 # Generate button
-generate_button = tk.Button(root, text="Generate", command=generate_bplan_data)
-generate_button.grid(row=8, column=0, columnspan=4)
+generate_button = tk.Button(text_frame, text="Generate", command=generate_bplan_data)
+generate_button.grid(row=1, column=0, columnspan=2)
 
-output_text = tk.Text(root, height=10, width=50)
+# Ouput textbox
+output_text = tk.Text(text_frame, height=10, width=50)
 output_text.grid(row=14, column=0, columnspan=2, sticky="nsew", padx=5, pady=5)
 
-scrollb = ttk.Scrollbar(root, command=output_text.yview)
+# Output textbox scrollbar 
+scrollb = ttk.Scrollbar(text_frame, command=output_text.yview)
 scrollb.grid(row=14, column=2, sticky='nsew')
 output_text['yscrollcommand'] = scrollb.set
 
-# Frame for the Treeview
-frame = ttk.Frame(root)
-frame.grid(row=12, column=0, columnspan=4, sticky='nsew')  
+# Create a vertical scrollbar for the Treeview
+scrollbar = ttk.Scrollbar(treeview_frame, orient="vertical")
 
-# Configure the root grid to allow the frame to expand and fill the space
-root.grid_rowconfigure(12, weight=1)  # Make the frame's row expandable
-root.grid_columnconfigure(0, weight=1)  # Make the first column expandable
-
-# Adding the Treeview widget
-tree = ttk.Treeview(frame, columns=("Name", "Quantity", "CR", "Size", "Token URL"), show="headings")
+# Adding the Treeview widget with specified columns
+tree = ttk.Treeview(treeview_frame, yscrollcommand=scrollbar.set,
+                    columns=("ID", "Name", "Quantity", "CR", "Size", "Token URL", "Location"),
+                    show="headings")
+tree.heading("ID", text="ID")
 tree.heading("Name", text="Name")
 tree.heading("Quantity", text="Quantity")
 tree.heading("CR", text="CR")
 tree.heading("Size", text="Size")
 tree.heading("Token URL", text="Token URL")
-tree.pack(fill='both', expand=True)
+tree.heading("Location", text="Location")
+
+# Adjusting columns
+tree.column("ID", width=50, minwidth=50, stretch=tk.NO)
+tree.column("Name", width=150, minwidth=100, stretch=tk.NO)
+tree.column("Quantity", width=60, minwidth=60, stretch=tk.NO)
+tree.column("CR", width=60, minwidth=60, stretch=tk.NO)
+tree.column("Size", width=60, minwidth=60, stretch=tk.NO)
+tree.column("Token URL", width=100, minwidth=100, stretch=tk.NO)
+tree.column("Location", width=80, minwidth=80, stretch=tk.NO)
+
+# Configure the scrollbar to interact with the Treeview
+scrollbar.config(command=tree.yview)
+
+# Place the Treeview widget using grid
+tree.grid(row=0, column=0, sticky='nsew', padx=(0, 20))  # Adding padding for visual space between tree and scrollbar
+
+# Place the scrollbar next to the Treeview
+scrollbar.grid(row=0, column=1, sticky='ns')
+
+# Delete monster button 
+delete_monster_button = tk.Button(treeview_frame, text="Delete Selected Monster", command=lambda: delete_selected_monster())
+delete_monster_button.grid(row=1, column=0)
 
 # Display the monsters in the treeView
 def display_monsters():
@@ -219,7 +337,13 @@ def display_monsters():
     
     # Add new items from the monsters_data list
     for monster in monsters_data:
-        tree.insert("", tk.END, values=(monster["name"], monster["quantity"], monster["cr"], monster["size"], monster["token_url"]))
+        tree.insert("", tk.END, values=(monster["id"],
+                                        monster["name"], 
+                                        monster["quantity"], 
+                                        monster["cr"], 
+                                        monster["size"], 
+                                        monster["token_url"], 
+                                        monster["location"]))
 
 # Delete the monsters in the treeView
 def delete_selected_monster():
@@ -245,7 +369,7 @@ def delete_selected_monster():
         # Remove the item from the Treeview
         tree.delete(selected_item)
 
-# Itterated through monsters with changed shortcodes and updates json
+# Itterate through monsters with changed shortcodes and updates json
 def update_monster_shortcode(monster_name, shortcode):
     for monster in monsters:
         if monster["name"] == monster_name:
@@ -254,12 +378,62 @@ def update_monster_shortcode(monster_name, shortcode):
     with open('./data/bestiary.json', 'w') as file:
         json.dump(monsters, file, indent=4)
 
+selected_monster_id = 0
+
+# Store ID when monster is selected
+def on_monster_selected(event):
+    global selected_monster_id
+    for iid in tree.selection():
+        item = tree.item(iid)
+        selected_monster_id = int(item['values'][0])
+        print(f"Selected Monster ID: {selected_monster_id}")
+        
+# Find grid coordinates based off of click
+def on_canvas_click(event):
+    global selected_monster_id, monsters_data
+    if selected_monster_id is not None:
+        # Convert event coordinates to canvas coordinates, considering the current scroll
+        canvas_x = map_canvas.canvasx(event.x)
+        canvas_y = map_canvas.canvasy(event.y)
+
+        # Calculate the grid position based on the canvas (image) coordinates
+        cell_size_px = int(cell_size_entry.get())
+        grid_x = int(canvas_x // cell_size_px)
+        grid_y = int(canvas_y // cell_size_px)
+
+        # Convert the grid position to an alpha-numeric format (e.g., A1, B2)
+        column_label = get_alpha_label(grid_x + 1)  # Adjusting grid_x to be 1-based for labeling
+        grid_position = f"{column_label}{grid_y + 1}"  # Similarly, adjusting grid_y to be 1-based
+
+        # Update the location of the selected monster
+        update_monster_location(selected_monster_id, grid_position)
+        display_monsters()
+
+# Update monster location
+def update_monster_location(selected_monster_id, grid_position):
+    for monster in monsters_data:
+        if monster["id"] == selected_monster_id:
+            monster["location"] = grid_position
+            break
+
+# Converts numerical grid to alphabet
+def get_alpha_label(index):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    label = ''
+    while index > 0:
+        index, remainder = divmod(index - 1, 26)
+        label = alphabet[remainder] + label
+    return label
+
 # Print to output text box
 def out_print(*args, **kwargs):
     # Insert text at the end of the text widget
     output_text.insert(tk.END, ' '.join(map(str, args)) + '\n')
     # Ensure the latest output is visible
     output_text.see(tk.END)
+
+# Shit randomly breaks if this isn't put at the end
+tree.bind("<<TreeviewSelect>>", on_monster_selected)
 
 # Run the application
 root.mainloop()
